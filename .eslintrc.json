@@ -1,0 +1,12 @@
+{
+  "extends": "./node_modules/aurelia-tools/.eslintrc.json",
+  "rules": {
+    "no-undef": 2
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jasmine": true
+  }
+}
