@@ -1,6 +1,6 @@
 {
   "name": "doc-bcx-aurelia-dnd",
-  "description": "Document for bcx-aurelia-dnd",
+  "description": "Document for bcx-aurelia-dnd and bcx-aurelia-reorderable-repeat",
   "version": "0.1.0",
   "repository": {
     "type": "git",
