@@ -29,7 +29,7 @@ If using native HTML5 DnD API, the preview would be provided by browser automati
 
 Because preview is directly under HTML body, you need to make sure source element's css class works directly under HTML body.
 
-If the source element's css is like `.example-container .example-box {...}`, the preview with class `.example-box` would not look right when `.example-container` is absent. If refactoring your css to fit `bcx-aurelia-dnd` is too much work, you can also [customize preview](#/customise-preview).
+If the source element's css is like `.example-container .example-box {...}`, the preview with class `.example-box` would not look right when `.example-container` is absent. If refactoring your css to fit `bcx-aurelia-dnd` is too much work, you can also [customize preview](#/customise-preview-and-source-handler).
 
 > `bcx-aurelia-dnd` style sheet (for `.bcx-dnd-preview` and others) was injected to the very top of HTML head. You can overwrite them in your style sheet, for instance, overwrite the `opacity` and `box-shadow` on `.bcx-dnd-preview`. You can also apply special style to one type of your preview with `.bcx-dnd-preview.example-box {...}`. Comparing to native HTML5 DnD API, we have much better control on preview.
 
@@ -37,6 +37,6 @@ If the source element's css is like `.example-container .example-box {...}`, the
 
 You may wonder how would preview on `<tr>` ever works. A cloned `<tr>`would not work out of a table.
 
-> Luckily, since v0.4.0, `bcx-aurelia-dnd` ships with some default preview drawers for `<tr>` and `<li>` elements, we copy their `<table>`/`<ul>`/`<ol>` wrapper and make some adjustment on width and height. You rarely need to go down to [customize preview](#/customise-preview) to deal with `<tr>` preview anymore.
+> Luckily, since v0.4.0, `bcx-aurelia-dnd` ships with some default preview drawers for `<tr>` and `<li>` elements, we copy their `<table>`/`<ul>`/`<ol>` wrapper and make some adjustment on width and height. You rarely need to go down to [customize preview](#/customise-preview-and-source-handler) to deal with `<tr>` preview anymore.
 
 Let's move on to [DnD Target](#/dnd-target).

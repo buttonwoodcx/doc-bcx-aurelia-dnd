@@ -63,7 +63,7 @@ There are few objects in location argument for `dndDrop(location)`.
 
 > All `x` and `y`, are page offset (relative to whole HTML body), not client offset (relative to browser current view-port). Page offset is stabler to use than client offset, especially when there is scrolling or browser zooming.
 
-> For convenience, `previewElementRect` always presents. Even if you turn off the preview (you will see that in [customize preview](#/customise-preview)), it still reports location and size as if you were using default preview.
+> For convenience, `previewElementRect` always presents. Even if you turn off the preview (you will see that in [customize preview](#/customise-preview-and-source-handler)), it still reports location and size as if you were using default preview.
 
 Beware, `sourceElementRect` is not current location of source element. It is a cached location for the source element at the time when DnD session started.
 

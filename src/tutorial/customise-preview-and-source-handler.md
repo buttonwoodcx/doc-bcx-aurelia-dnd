@@ -1,6 +1,6 @@
 # Customise preview
 
-There are two situations you want to use customise preview.
+There are two situations you want to use customised preview.
 
 1. when the built-in preview drawer doesn't draw preview to your expectation, either due to css limitation or DOM hierarchy limitation.
 2. when you want a totally different preview, for instance, customise "cursor" during DnD session.
@@ -53,8 +53,6 @@ get dndCss() {
 ```
 
 It observes `dnd.isProcessing`, `dnd.model`, `dnd.canDrop` and `dnd.isHoveringShallowly`, set the right css class for box element. Thanks for Aurelia, all the style changes are updated automatically during a DnD session.
-
-Let's move on to [optional source handler](#/testing).
 
 ## Optional source handler
 

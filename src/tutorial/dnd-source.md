@@ -9,7 +9,7 @@ Since the source and target are bound to DOM element, you need to register and d
 
 > The common practice is to do `addSource`/`addTarget` in `attached()`, and do `removeSource`/`removeTarget` in `detached()`.
 
-## Let's implement our first example ["1. move object"](#/simple-move) step by step.
+Let's implement our first example ["1. move object"](#/e1-simple-move) step by step.
 
 There is a container of three boxes inside. To implement moving box, we register every box as a source which we want to drag, and register the container as the target which will receive a drop.
 

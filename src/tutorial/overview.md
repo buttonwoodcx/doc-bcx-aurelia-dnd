@@ -32,11 +32,9 @@ There are few alternative projects in Aurelia community. List them here for refe
 
 To start with your Aurelia app.
 
-> with aurelia-cli, just do `au install bcx-aurelia-dnd`.
+> with aurelia-cli `au install bcx-aurelia-dnd`.
 
-> with jspm, do `jspm install npm:bcx-aurelia-dnd`.
-
-> with webpack, do `npm i bcx-aurelia-dnd`.
+> with webpack `npm i bcx-aurelia-dnd`.
 
 There is a single class `DndService` provided by `bcx-aurelia-dnd`. Inject it to your component.
 

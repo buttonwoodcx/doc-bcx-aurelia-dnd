@@ -59,6 +59,13 @@ export class App {
         moduleId: 'tutorial/reorderable-repeat.html'
       },
       {
+        route: 'api', name: 'api',
+        title: 'API',
+        nav: true,
+        settings: {section: 'Reference'},
+        moduleId: 'tutorial/api.html'
+      },
+      {
         route: 'faq', name: 'faq',
         title: 'FAQ',
         nav: true,
@@ -78,13 +85,6 @@ export class App {
         nav: true,
         settings: {section: 'Reference'},
         moduleId: 'tutorial/typescript-support.html'
-      },
-      {
-        route: 'api', name: 'api',
-        title: 'API',
-        nav: true,
-        settings: {section: 'Reference'},
-        moduleId: 'tutorial/api.html'
       },
       {
         route: 'e1-simple-move', name: 'e1-simple-move',
@@ -120,6 +120,48 @@ export class App {
         nav: true,
         settings: {section: 'Examples'},
         moduleId: 'examples/e5-draw/index'
+      },
+      {
+        route: 'e6-reorder-list', name: 'e6-reorder-list',
+        title: '6. underneath algorithm of reorderable-repeat',
+        nav: true,
+        settings: {section: 'Examples'},
+        moduleId: 'examples/e6-reorder-list/index'
+      },
+      {
+        route: 'er1-reorderable-repeat', name: 'er1-reorderable-repeat',
+        title: '1. reorder list',
+        nav: true,
+        settings: {section: 'Examples of reorderable-repeat'},
+        moduleId: 'examples/er1-reorderable-repeat/index'
+      },
+      {
+        route: 'er2-reorderable-repeat-customise-style', name: 'er2-reorderable-repeat-customise-style',
+        title: '2. reorder list with customised style',
+        nav: true,
+        settings: {section: 'Examples of reorderable-repeat'},
+        moduleId: 'examples/er2-reorderable-repeat-customise-style/index'
+      },
+      {
+        route: 'er3-reorderable-repeat-with-handler', name: 'er3-reorderable-repeat-with-handler',
+        title: '3. reorder list with handler',
+        nav: true,
+        settings: {section: 'Examples of reorderable-repeat'},
+        moduleId: 'examples/er3-reorderable-repeat-with-handler/index'
+      },
+      {
+        route: 'er4-reorderable-repeat-customise-preview', name: 'er4-reorderable-repeat-customise-preview',
+        title: '4. reorder list with customised preview',
+        nav: true,
+        settings: {section: 'Examples of reorderable-repeat'},
+        moduleId: 'examples/er4-reorderable-repeat-customise-preview/index'
+      },
+      {
+        route: 'er5-reorderable-repeat-direction', name: 'er5-reorderable-repeat-direction',
+        title: '6. flow direction',
+        nav: true,
+        settings: {section: 'Examples of reorderable-repeat'},
+        moduleId: 'examples/er5-reorderable-repeat-direction/index'
       }
     ]);
   }
