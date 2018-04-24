@@ -6,5 +6,5 @@ export class Index {
     'src/examples/e1-simple-move/container.js',
     'src/examples/e1-simple-move/container.html',
     'src/examples/e1-simple-move/container.css'
-  ]
+  ];
 }

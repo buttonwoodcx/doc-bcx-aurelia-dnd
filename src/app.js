@@ -45,25 +45,32 @@ export class App {
         moduleId: 'tutorial/turn-off-preview-use-hover.html'
       },
       {
-        route: 'customise-preview', name: 'customise-preview',
-        title: 'Customise Preview',
+        route: 'customise-preview-and-source-handler', name: 'customise-preview-and-source-handler',
+        title: 'Customise Preview, Optional Source Handler',
         nav: true,
         settings: {section: 'Tutorial'},
-        moduleId: 'tutorial/customise-preview.html'
+        moduleId: 'tutorial/customise-preview-and-source-handler.html'
       },
       {
         route: 'reorderable-repeat', name: 'reorderable-repeat',
         title: 'bcx-aurelia-reorderable-repeat',
         nav: true,
-        settings: {section: 'Tutorial'},
+        settings: {section: 'Tutorial of reorderable-repeat'},
         moduleId: 'tutorial/reorderable-repeat.html'
       },
       {
         route: 'faq', name: 'faq',
         title: 'FAQ',
         nav: true,
-        settings: {section: 'Tutorial'},
+        settings: {section: 'Reference'},
         moduleId: 'tutorial/faq.html'
+      },
+      {
+        route: 'testing', name: 'testing',
+        title: 'Testing',
+        nav: true,
+        settings: {section: 'Reference'},
+        moduleId: 'tutorial/testing.html'
       },
       {
         route: 'typescript-support', name: 'typescript-support',
@@ -71,6 +78,13 @@ export class App {
         nav: true,
         settings: {section: 'Reference'},
         moduleId: 'tutorial/typescript-support.html'
+      },
+      {
+        route: 'api', name: 'api',
+        title: 'API',
+        nav: true,
+        settings: {section: 'Reference'},
+        moduleId: 'tutorial/api.html'
       },
       {
         route: 'e1-simple-move', name: 'e1-simple-move',
@@ -85,6 +99,27 @@ export class App {
         nav: true,
         settings: {section: 'Examples'},
         moduleId: 'examples/e2-simple-move-hover/index'
+      },
+      {
+        route: 'e3-customise-preview', name: 'e3-customise-preview',
+        title: '3. customise preview',
+        nav: true,
+        settings: {section: 'Examples'},
+        moduleId: 'examples/e3-customise-preview/index'
+      },
+      {
+        route: 'e4-handler-move', name: 'e4-handler-move',
+        title: '4. source handler and bcx-dnd-preview-hide',
+        nav: true,
+        settings: {section: 'Examples'},
+        moduleId: 'examples/e4-handler-move/index'
+      },
+      {
+        route: 'e5-draw', name: 'e5-draw',
+        title: '5. use DnD to draw',
+        nav: true,
+        settings: {section: 'Examples'},
+        moduleId: 'examples/e5-draw/index'
       }
     ]);
   }

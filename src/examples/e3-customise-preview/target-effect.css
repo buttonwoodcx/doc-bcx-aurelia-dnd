@@ -1,0 +1,14 @@
+.e3-example-container.can-drop,
+.e3-example-box.can-drop {
+  background-color: lightgreen;
+}
+
+.e3-example-container.can-drop.shallow-hover,
+.e3-example-box.can-drop.shallow-hover {
+  outline: 3px solid green;
+}
+
+.e3-example-container.can-not-drop,
+.example-box.can-not-drop {
+  background-color: lightgrey;
+}

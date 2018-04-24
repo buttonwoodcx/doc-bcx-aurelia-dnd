@@ -6,5 +6,5 @@ export class Index {
     'src/examples/e2-simple-move-hover/box.js',
     'src/examples/e2-simple-move-hover/box.html',
     'src/examples/e2-simple-move-hover/box.css'
-  ]
+  ];
 }

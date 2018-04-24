@@ -44,4 +44,4 @@ You can use them to prepare or cleanup your environment for a DnD session.
 
 > In the example code above, instead of applying intention in `dndDrop()` callback, you can make empty `dndDrop() {/* no-op */}`, then apply intention in `'dnd:didEnd'` event subscriber before reset intention. The difference is this alternative solution can respond to drop outside of the target element (outside drop would not trigger `dndDrop()`), it can use last known intention when user released mouse button outside of the target element.
 
-Let's move on to [customise preview](#/customise-preview).
+Let's move on to [customise preview, optional source handler](#/customise-preview-and-source-handler).
