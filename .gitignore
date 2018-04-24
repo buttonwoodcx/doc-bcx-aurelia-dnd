@@ -9,5 +9,5 @@ node_modules
 
 # Compiled files
 # /scripts in gh-pages branch
-/scripts
+# /scripts
 /src/environment.js
