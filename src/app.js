@@ -85,7 +85,7 @@ export class App {
         nav: true,
         settings: {section: 'Examples'},
         moduleId: 'examples/e2-simple-move-hover/index'
-      },
+      }
     ]);
   }
 }

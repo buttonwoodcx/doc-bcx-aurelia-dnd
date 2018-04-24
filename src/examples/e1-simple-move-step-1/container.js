@@ -4,5 +4,4 @@ export class Container {
     {name: 'B', x: 50, y: 200},
     {name: 'C', x: 200, y: 100}
   ];
-
 }
