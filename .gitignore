@@ -8,5 +8,6 @@ node_modules
 /package-lock.json
 
 # Compiled files
-# /scripts # check in for gh-pages
+# /scripts in gh-pages branch
+/scripts
 /src/environment.js

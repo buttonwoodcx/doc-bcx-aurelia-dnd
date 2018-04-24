@@ -1,6 +1,8 @@
 # bcx-aurelia-dnd
 
-A generic drag-and-drop lib for [Aurelia](https://aurelia.io), works on both desktop and mobile, provides APIs fit in MVC/MVVM natively. The design is similar to [React DnD](http://react-dnd.github.io/react-dnd/).
+> A generic drag-and-drop lib for [Aurelia](https://aurelia.io), works on both desktop and mobile, provides APIs fit in MVC/MVVM natively. The design is similar to [`react-dnd`](http://react-dnd.github.io/react-dnd/).
+
+If you only want something using DnD to reorder a list, [`bcx-aurelia-reorderable-repeat`](#/reorderable-repeat) is a deadly simple Aurelia plugin based on bcx-aurelia-dnd.
 
 If you want to play with the source code of included examples.
 
@@ -12,7 +14,7 @@ npm i # or yarn
 au run --watch
 ```
 
-## bcx-aurelia-dnd is not a [`dragula`](https://bevacqua.github.io/dragula/)  wrapper
+## We use [`dragula`](https://bevacqua.github.io/dragula/) algorithm, but `bcx-aurelia-dnd` is not a `dragula` wrapper
 
 We use `dragula`'s algorithm to avoid native HTML5 DnD API (see [FAQ](/#/faq)), we don't inherit or expose any `dragula` API (they don't even exist in the code). We provide APIs fit in MVC/MVVM natively.
 
@@ -54,4 +56,4 @@ export class YourComponent {
 
 > For TypeScript user, have a look at [TypeScript Support](#/typescript-support).
 
-Let's get started to add a [drag source](#/drag-source).
+Let's get started to add a [DnD source](#/dnd-source).
