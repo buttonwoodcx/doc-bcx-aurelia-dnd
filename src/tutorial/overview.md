@@ -10,7 +10,7 @@ If you want to play with the source code of included examples.
 git clone git@github.com:buttonwoodcx/doc-bcx-aurelia-dnd.git
 cd doc-bcx-aurelia-dnd
 npm i -g aurelia-cli # if you have not installed aurelia-cli
-npm i # or yarn
+npm i # yarn doesn't work because of https://github.com/yarnpkg/yarn/issues/5235
 au run --watch
 ```
 
