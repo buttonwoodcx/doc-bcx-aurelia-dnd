@@ -16,7 +16,7 @@ au run --watch
 
 ## We use [`dragula`](https://bevacqua.github.io/dragula/) algorithm, but `bcx-aurelia-dnd` is not a `dragula` wrapper
 
-We use `dragula`'s algorithm to avoid native HTML5 DnD API (see [FAQ](/#/faq)), we don't inherit or expose any `dragula` API (they don't even exist in the code). We provide APIs fit in MVC/MVVM natively.
+We use `dragula`'s algorithm to avoid native HTML5 DnD API (see [FAQ](#/faq)), we don't inherit or expose any `dragula` API (they don't even exist in the code). We provide APIs fit in MVC/MVVM natively.
 
 ## Alternative projects
 

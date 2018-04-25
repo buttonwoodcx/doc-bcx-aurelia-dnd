@@ -8,7 +8,7 @@ A customised Aurelia repeater that supports drag-and-drop reordering automatical
 
 > with aurelia-cli, `au install bcx-aurelia-reorderable-repeat`.
 
-> with webpack, `npm install --save bcx-aurelia-reorderable-repeat`.
+> with webpack, `npm i bcx-aurelia-reorderable-repeat`.
 
 ### Load plugin
 
