@@ -15,8 +15,7 @@ In TypeScript project, on top of normal import, you can import additional interf
 
 Here is an example.
 
-```js
-import {DndService,
+<div><code-viewer value="import {DndService,
         TargetDelegate,
         TargetDelegateInjectedDnd,
         DndLocation} from 'bcx-aurelia-dnd';
@@ -26,9 +25,9 @@ import {autoinject, computedFrom} from 'aurelia-framework';
 export class App implements TargetDelegate {
   dndService: DndService;
 
-  // need to declare "dnd" before using it,
+  // need to declare 'dnd' before using it,
   // otherwise TypeScript compiler will complain.
-  // "dnd?: any;" also works, but has no typing information.
+  // 'dnd?: any;' also works, but has no typing information.
   dnd?: TargetDelegateInjectedDnd;
 
   constructor(dndService: DndService) {
@@ -62,5 +61,4 @@ export class App implements TargetDelegate {
     const {isProcessing, canDrop, isHoveringShallowly} = dnd;
     return isProcessing && canDrop && isHoveringShallowly;
   }
-}
-```
+}" mode="js"></code-viewer></div>

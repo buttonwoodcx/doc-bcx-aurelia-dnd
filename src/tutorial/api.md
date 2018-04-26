@@ -10,17 +10,13 @@
 
 You don't need to use constructor in Aurelia app.
 
-```javascript
-const dndService = new DndService();
-```
+<div><code-viewer value="const dndService = new DndService();" mode="js"></code-viewer></div>
 
 > return an instance created without Aurelia Event Aggregator support. Events `'dnd:willStart'`, `'dnd:didStart'`, `'dnd:willEnd'`, `'dnd:willEnd'` would not fire.
 
-```javascript
-import {EventAggregator} from 'aurelia-event-aggregator';
+<div><code-viewer value="import {EventAggregator} from 'aurelia-event-aggregator';
 const sharedEa = new EventAggregator();
-const dndService = new DndService(sharedEa);
-```
+const dndService = new DndService(sharedEa);" mode="js"></code-viewer></div>
 
 > return an instance created with Aurelia Event Aggregator support. Use `sharedEa` to subscribe to events.
 

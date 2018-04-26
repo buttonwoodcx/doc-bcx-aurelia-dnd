@@ -18,7 +18,7 @@
     "aurelia-bootstrapper": "^2.2.0",
     "bcx-aurelia-dnd": "^0.4.5",
     "bcx-aurelia-reorderable-repeat": "^0.4.0",
-    "bcx-doc-base": "buttonwoodcx/bcx-doc-base#v0.1.9",
+    "bcx-doc-base": "buttonwoodcx/bcx-doc-base#v0.1.12",
     "bluebird": "^3.5.1",
     "jquery": "^3.3.1",
     "requirejs": "^2.3.5",

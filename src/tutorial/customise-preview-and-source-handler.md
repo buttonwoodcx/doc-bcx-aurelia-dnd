@@ -33,8 +33,7 @@ In the above example code, both boxes and container are DnD targets. They got so
 
 Let's have a look on the implementation of box's property `dndCss`.
 
-```javascript
-@computedFrom('dnd', 'dnd.model', 'dnd.isProcessing', 'dnd.canDrop', 'dnd.isHoveringShallowly')
+<div><code-viewer value="@computedFrom('dnd', 'dnd.model', 'dnd.isProcessing', 'dnd.canDrop', 'dnd.isHoveringShallowly')
 get dndCss() {
   if (!this.dnd) return '';
   const {model, isProcessing, canDrop, isHoveringShallowly} = this.dnd;
@@ -49,8 +48,7 @@ get dndCss() {
   }
   if (isHoveringShallowly) css += ' shallow-hover';
   return css;
-}
-```
+}" mode="js"></code-viewer></div>
 
 It observes `dnd.isProcessing`, `dnd.model`, `dnd.canDrop` and `dnd.isHoveringShallowly`, set the right css class for box element. Thanks for Aurelia, all the style changes are updated automatically during a DnD session.
 
@@ -68,11 +66,9 @@ You can mark parts of the source element with class `bcx-dnd-preview-hide` to pr
 
 > The default style for `bcx-dnd-preview-hide` is `visibility: hidden;`, not `display: none;`, this makes sure the hidden part doesn't affect the layout geometry.
 
-```
-.bcx-dnd-preview .bcx-dnd-preview-hide {
+<div><code-viewer value=".bcx-dnd-preview .bcx-dnd-preview-hide {
   visibility: hidden !important;
-}
-```
+}" mode="css"></code-viewer></div>
 
 Here is an example for both source handler and bcx-dnd-preview-hide.
 

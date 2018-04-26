@@ -9,8 +9,7 @@ While source `delegate` has one mandatory method `dndModel()`, target `delegate`
 
 > Note `dndDrop(location)` doesn't have `model` in the arguments, you get current DnD model from `this.dnd.model`. More explanation on `this.dnd` after following code snippet.
 
-```javascript
-export class Container {
+<div><code-viewer value="export class Container {
   // ... add/removeTarget in attached/detached
   // ... hook up dndElement in container.html
 
@@ -35,8 +34,7 @@ export class Container {
       this.items.push(item);
     }
   }
-}
-```
+}" mode="js"></code-viewer></div>
 
 ### Injected `dnd` property
 
@@ -81,16 +79,14 @@ There is one more thing we want to fix. During dragging a box, the original sour
 
 While DnD target `delegate` got special injected `dnd` property, DnD source `delegate` got none. But you can observe two properties directly on `dndService` instance: `isProcessing` and `model`.
 
-```javascript
-export class Box {
+<div><code-viewer value="export class Box {
   //...
   @computedFrom('dndService.isProcessing', 'dndService.model')
   get draggingMe() {
     return this.dndService.isProcessing &&
            this.dndService.model.item === this.item;
   }
-}
-```
+}" mode="js"></code-viewer></div>
 
 > `dndService.isProcessing` and `dndService.model` are exactly same as DnD target `delegate`'s `dnd.isProcessing` and `dnd.model`. In fact, you can use them as well in DnD target code.
 
@@ -98,20 +94,18 @@ export class Box {
 
 Hide the element when dragging, so user only sees the preview element during DnD session.
 
-```html
-<template>
-  <require from="./box.css"></require>
+<div><code-viewer value="<template>
+  <require from=&quot;./box.css&quot;></require>
 
   <div
-    ref="dndElement"
-    class="example-box"
-    style.bind="positionCss"
-    show.bind="!draggingMe"
+    ref=&quot;dndElement&quot;
+    class=&quot;example-box&quot;
+    style.bind=&quot;positionCss&quot;
+    show.bind=&quot;!draggingMe&quot;
   >
-    ${item.name}
+    \${item.name}
   </div>
-</template>
-```
+</template>" mode="html"></code-viewer></div>
 
 > Note we use `show.bind`, not `if.bind`. Aurelia `if.bind` adds/removes the element from DOM tree, while `show.bind` simply toggles css `visibility`. Because we have `ref="dndElement"` on this DOM node, we really don't want `if.bind` dynamically adds/removes it.
 

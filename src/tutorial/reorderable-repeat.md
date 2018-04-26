@@ -14,9 +14,7 @@ A customised Aurelia repeater that supports drag-and-drop reordering automatical
 
 In you app main.js file.
 
-```js
-aurelia.use.plugin(PLATFORM.moduleName('bcx-aurelia-reorderable-repeat'));
-```
+<div><code-viewer value="aurelia.use.plugin(PLATFORM.moduleName('bcx-aurelia-reorderable-repeat'));" mode="js"></code-viewer></div>
 
 ## Usage
 
@@ -36,11 +34,9 @@ If you have not read [tutorial](#/overview) for `bcx-aurelia-dnd`, we recommend 
 
 > The style defined in class `reorderable-repeat-dragging-me` is just hiding the source element without affecting layout.
 
-```
-.reorderable-repeat-dragging-me {
+<div><code-viewer value=".reorderable-repeat-dragging-me {
   visibility: hidden;
-}
-```
+}" mode="css"></code-viewer></div>
 
 To customise the DOM under drag, you can overwrite `.reorderable-repeat-dragging-me` in your style sheet, or use `.reorderable-repeat-dragging-me.your-class` to localize the customisation.
 
@@ -110,11 +106,9 @@ That concludes all features of `bcx-aurelia-reorderable-repeat`.
 `bcx-aurelia-reorderable-repeat` doesn't support repeat on `template` element.
 
 Following html generates an Aurelia error.
-```html
-<template reorderable-repeat.for="obj of array">
+<div><code-viewer value="<template reorderable-repeat.for=&quot;obj of array&quot;>
   <!-- inner html -->
-</template>
-```
+</template>" mode="html"></code-viewer></div>
 
 `bcx-aurelia-reorderable-repeat` only supports `Array` model, not `Set`, `Map` or `Object` (Those 3 are supported by standard Aurelia repeater). We are trying to reorder something, only array makes sense here.
 

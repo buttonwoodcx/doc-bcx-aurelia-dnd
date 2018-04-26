@@ -13,15 +13,13 @@ If using native HTML5 DnD API, the preview would be provided by browser automati
 3. get calculated page offset and size of source element, apply them to preview's `left,top,width,height` styles. So that preview will appear at the exact same location of source element.
 4. append preview element directly to HTML body. This imposes limitation on css.
 
-```css
-.bcx-dnd-preview {
+<div><code-viewer value=".bcx-dnd-preview {
   position: absolute !important;
   margin: 0 !important;
   z-index: 9999 !important;
   opacity: 0.8;
   box-shadow: 0 0 16px gray;
-}
-```
+}" mode="css"></code-viewer></div>
 
 > Be clear, preview element lives outside of Aurelia. It's a static snapshot of source element.
 

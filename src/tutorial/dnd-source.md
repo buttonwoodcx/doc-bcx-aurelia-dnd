@@ -16,8 +16,8 @@ There is a container of three boxes inside. To implement moving box, we register
 ### Implement source
 
 The box component.
-```javascript
-export class Box {
+
+<div><code-viewer value="export class Box {
   //...
   attached() {
     this.dndService.addSource(this);
@@ -27,8 +27,7 @@ export class Box {
     this.dndService.removeSource(this);
   }
   //...
-}
-```
+}" mode="js"></code-viewer></div>
 
 `dndService.addSource(delegate, options)` takes two arguments.
 
@@ -39,19 +38,17 @@ The first thing that a source `delegate` needs to provide, is a reference to the
 
 > By default, `DndService` get DOM element from `delegate.dndElement`. The easiest way to set that reference is to use `ref="dndElement"` in your view template.
 
-```html
-<template>
-  <require from="./box.css"></require>
+<div><code-viewer value="<template>
+  <require from=&quot;./box.css&quot;></require>
 
   <div
-    ref="dndElement"
-    class="example-box"
-    style.bind="positionCss"
+    ref=&quot;dndElement&quot;
+    class=&quot;example-box&quot;
+    style.bind=&quot;positionCss&quot;
   >
-    ${item.name}
+    \${item.name}
   </div>
-</template>
-```
+</template>" mode="html"></code-viewer></div>
 
 > When you use `ref="dndElement"` in view template, Aurelia (not `DndService`) creates a property `dndElement` in your component pointing to the DOM element, you can access `this.dndElement` inside your component code.
 
@@ -61,8 +58,7 @@ Now DOM is hooked up, source `delegate` needs to provide `dndModel()` callback, 
 
 > When `DndService` detected user started a drag, it asks (only once) the source `delegate` `dndModel()` callback to return a model.
 
-```javascript
-export class Box {
+<div><code-viewer value="export class Box {
   //...
   dndModel() {
     return {
@@ -71,8 +67,7 @@ export class Box {
     };
   }
   //...
-}
-```
+}" mode="js"></code-viewer></div>
 
 > `DndService` has zero requirement on the shape of the model. Even if you return `undefined`, `DndService` would not complain, although there is no practical usage of returning `undefined`.
 

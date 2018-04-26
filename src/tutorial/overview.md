@@ -38,8 +38,7 @@ To start with your Aurelia app.
 
 There is a single class `DndService` provided by `bcx-aurelia-dnd`. Inject it to your component.
 
-```js
-import {inject} from 'aurelia-framework';
+<div><code-viewer value="import {inject} from 'aurelia-framework';
 import {DndService} from 'bcx-aurelia-dnd';
 
 @inject(DndService)
@@ -47,8 +46,7 @@ export class YourComponent {
   constructor(dndService) {
     this.dndService = dndService;
   }
-}
-```
+}" mode="js"></code-viewer></div>
 
 > Here we rely on default behavior of Aurelia DI (dependency injection). Aurelia DI creates a singleton `dndService` instance for all components to share.
 
