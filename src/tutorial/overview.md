@@ -23,9 +23,7 @@ We use `dragula`'s algorithm to avoid native HTML5 DnD API (see [FAQ](#/faq)), w
 There are few alternative projects in Aurelia community. List them here for reference.
 
 1. **[`aurelia-dragula`](https://github.com/michaelmalonenz/aurelia-dragula)** a `dragula` wrapper to provide convenient interface to Aurelia. Handy to existing `dragula` users.
-
 2. **[`oribella-aurelia-sortable`](https://github.com/oribella/aurelia-sortable)** based on very interesting [`oribella`](https://github.com/oribella/oribella), can sort list or multiple lists.
-
 3. **[`aurelia-sortablejs`](https://github.com/eriklieben/aurelia-sortablejs)** based on [`Sortablejs`](https://github.com/rubaxa/Sortable), can sort list or multiple lists, visually appealing.
 
 ## Use inside Aurelia app
