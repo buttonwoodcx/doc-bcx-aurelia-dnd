@@ -1,3 +1,13 @@
+<a name="0.1.4"></a>
+## [0.1.4](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.1.3...v0.1.4) (2018-04-26)
+
+
+### Features
+
+* use codemirror for inline code. ([78bdf22](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/commit/78bdf22))
+
+
+
 <a name="0.1.3"></a>
 ## [0.1.3](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.1.2...v0.1.3) (2018-04-25)
 
