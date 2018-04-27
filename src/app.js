@@ -53,10 +53,24 @@ export class App {
       },
       {
         route: 'reorderable-repeat', name: 'reorderable-repeat',
-        title: 'bcx-aurelia-reorderable-repeat',
+        title: 'reorderable-repeat Basics',
         nav: true,
         settings: {section: 'Tutorial of reorderable-repeat'},
         moduleId: 'tutorial/reorderable-repeat.html'
+      },
+      {
+        route: 'multi-lists', name: 'multi-lists',
+        title: 'Multiple lists reordering',
+        nav: true,
+        settings: {section: 'Tutorial of reorderable-repeat'},
+        moduleId: 'tutorial/reorderable-repeat-multi-lists.html'
+      },
+      {
+        route: 'reorderable-repeat-limitation', name: 'reorderable-repeat-limitation',
+        title: 'Limitation',
+        nav: true,
+        settings: {section: 'Tutorial of reorderable-repeat'},
+        moduleId: 'tutorial/reorderable-repeat-limitation.html'
       },
       {
         route: 'api', name: 'api',
@@ -162,6 +176,20 @@ export class App {
         nav: true,
         settings: {section: 'Examples of reorderable-repeat'},
         moduleId: 'examples/er5-reorderable-repeat-direction/index'
+      },
+      {
+        route: 'er6-multi-lists', name: 'er6-multi-lists',
+        title: '6. multi-lists reordering',
+        nav: true,
+        settings: {section: 'Examples of reorderable-repeat'},
+        moduleId: 'examples/er6-multi-lists/index'
+      },
+      {
+        route: 'er7-multi-lists', name: 'er7-multi-lists',
+        title: '6. multi-lists with reorderable-group-for',
+        nav: true,
+        settings: {section: 'Examples of reorderable-repeat'},
+        moduleId: 'examples/er7-multi-lists-with-group-for/index'
       }
     ]);
   }

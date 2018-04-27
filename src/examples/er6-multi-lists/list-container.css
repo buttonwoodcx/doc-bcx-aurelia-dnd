@@ -1,0 +1,30 @@
+.er6-list-container {
+  display: flex;
+  align-items: start;
+  width: 250px;
+  margin: 5px;
+}
+
+.er6-list {
+  flex: 1 1 0;
+  margin: 10px;
+  padding: 10px;
+  background-color: lightgray;
+}
+
+.er6-list-item {
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid #888;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  overflow: hidden;
+  background: white;
+}
+
+.er6-list-item.reorderable-repeat-dragging-me {
+  visibility: visible; /* unset visibility: hidden */
+  color: transparent; /* hide text */
+  background: linear-gradient(to right, lightgrey, white, lightgrey);
+}

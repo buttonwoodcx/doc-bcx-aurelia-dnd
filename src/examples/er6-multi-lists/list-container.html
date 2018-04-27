@@ -1,0 +1,26 @@
+<template>
+  <require from="./list-container.css"></require>
+
+  <div class="er6-list-container">
+    <div class="er6-list">
+      Numbers
+      <div
+        class="er6-list-item"
+        reorderable-repeat.for="item of numbers"
+        reorderable-group="my-items">
+        ${item}
+      </div>
+    </div>
+    <div class="er6-list">
+      Letters
+      <div
+        class="er6-list-item"
+        reorderable-repeat.for="item of letters"
+        reorderable-group="my-items">
+        ${item}
+      </div>
+    </div>
+  </div>
+
+
+</template>

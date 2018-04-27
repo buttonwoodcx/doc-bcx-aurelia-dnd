@@ -115,12 +115,12 @@ Now we got the full version of the first example.
 
 <compose view-model="../examples/e1-simple-move/index"></compose>
 
-## Cross Talk
+## Crosstalk
 
 If your computer screen is big enough to show both "e1-simple-move-step-2" and "e1-simple-move" demo apps within same frame (or you can use browser zoom-out to bring them into same screen), you can actually drag box from one app to the other, that generates cross-talk and can mutate the original box you dragged.
 
 > This is because both demos has exactly same check in `dndCanDrop(model)`, `model.type === 'moveItem'`.
 
-> To avoid cross-talk in your app, design `dndModel()` and `dndCanDrop()` defensively for target to only respond to its interested source model. For instance, if we distinguish the `type` of two demos, set `type` to `moveItem-e1-step-1` and `moveItem-e1` respectively, we can eliminate cross talk.
+> To avoid cross-talk in your app, design `dndModel()` and `dndCanDrop()` defensively for target to only respond to its interested source model. For instance, if we distinguish the `type` of two demos, set `type` to `moveItem-e1-step-1` and `moveItem-e1` respectively, we can eliminate crosstalk.
 
 Let's move on to [turn off preview, use dndHover](#/turn-off-preview-use-hover).
