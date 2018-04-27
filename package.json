@@ -26,7 +26,7 @@
   },
   "peerDependencies": {},
   "devDependencies": {
-    "aurelia-cli": "huochunpeng/cli.git#at12",
+    "aurelia-cli": "huochunpeng/cli#at12",
     "aurelia-testing": "^1.0.0-beta.4.0.0",
     "aurelia-tools": "^2.0.0",
     "babel-eslint": "^8.2.3",
