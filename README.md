@@ -13,3 +13,10 @@ npm i # yarn doesn't work because of https://github.com/yarnpkg/yarn/issues/5235
 # run the app
 au run --watch
 ```
+
+## For reference
+
+This repo uses some special setup.
+
+1. support markdown as view template https://github.com/aurelia-contrib/aurelia-getting-started/blob/master/guides/how-to-support-markdown-preprocessing.md
+2. use unreleased cli auto-tracing https://github.com/aurelia/cli/pull/862

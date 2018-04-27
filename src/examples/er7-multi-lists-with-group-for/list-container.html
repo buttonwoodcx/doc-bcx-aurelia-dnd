@@ -2,7 +2,7 @@
   <require from="./list-container.css"></require>
 
   <div class="er7-list-container">
-    <div class="er7-list" reorderable-group-for="items.bind: numbers; group: my-items">
+    <div class="er7-list" reorderable-group-for.bind="numbers">
       Numbers
       <div
         class="er7-list-item"
@@ -11,7 +11,7 @@
         ${item}
       </div>
     </div>
-    <div class="er7-list" reorderable-group-for="items.bind: letters; group: my-items">
+    <div class="er7-list" reorderable-group-for.bind="letters">
       Letters
       <div
         class="er7-list-item"
@@ -21,6 +21,4 @@
       </div>
     </div>
   </div>
-
-
 </template>

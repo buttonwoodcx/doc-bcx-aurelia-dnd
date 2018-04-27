@@ -22,18 +22,15 @@ What's going on?
 
 Different from most DnD libraries, `reorderable-repeat` **doesn't have concept of container**, all DnD events are handled by those repeated views themselves. That's why `reorderable-repeat` is so easy to use.
 
-This simplification created a problem with empty array model, there is no child views to handle DnD events.
+This simplification created a problem with empty array model. When array is empty, there is no child views to handle DnD events.
 
 To cater the deficit, `reorderable-group-for` custom attribute is introduced to behave similar to a container.
 
-You need to bind two properties:
+It must be strictly used as:
 
-1. `items` you need to always use `items.bind` to bind an array.
-2. `group` you need to provide a string literal of group name.
+<div><code-viewer value="<some-element reorderable-group-for.bind=&quot;arrayModel&quot;> ... </some-element>" mode="html"></code-viewer></div>
 
-```
-reorderable-group-for="items.bind: arrayModel; group: groupName"
-```
+> `arrayModel` is the same model you used in `reorderable-repeat.for="item of arrayModel"`.
 
 Usually, you use `reorderable-group-for` on some parent element of the repeater. It behaves like an extra DnD target for that repeater. It also effectively enlarge the responsive area.
 
@@ -42,5 +39,7 @@ Now even empty array have some DOM to receive DnD events.
 <compose view-model="../examples/er7-multi-lists-with-group-for/index"></compose>
 
 > It's not required to use `reorderable-group-for` on parent element of the repeater. You can use on any DOM element, it will find the corresponding repeater automatically.
+
+> `reorderable-group-for` is named after `<label for="field">`. You can think it behaves like a `label` (`reorderable-group-for`) to an `input` (`reorderable-repeater` with group). `label` can be parent element of `input` or sibling element of `input`, when you click the `label` (hover the `reorderable-group-for`), it behaves like you clicked the `input` (hover child views of `reorderable-repeater`).
 
 That concludes all features of `bcx-aurelia-reorderable-repeat`.
