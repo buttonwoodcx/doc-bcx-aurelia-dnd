@@ -1,3 +1,13 @@
+<a name="0.2.1"></a>
+## [0.2.1](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.2.0...v0.2.1) (2018-04-27)
+
+
+### Bug Fixes
+
+* fix some page title ([83ccdea](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/commit/83ccdea))
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.1.9...v0.2.0) (2018-04-27)
 

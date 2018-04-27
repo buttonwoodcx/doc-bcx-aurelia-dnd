@@ -60,7 +60,7 @@ export class App {
       },
       {
         route: 'multi-lists', name: 'multi-lists',
-        title: 'Multiple lists reordering',
+        title: 'Reordering across multiple lists',
         nav: true,
         settings: {section: 'Tutorial of reorderable-repeat'},
         moduleId: 'tutorial/reorderable-repeat-multi-lists.html'
@@ -172,7 +172,7 @@ export class App {
       },
       {
         route: 'er5-reorderable-repeat-direction', name: 'er5-reorderable-repeat-direction',
-        title: '6. flow direction',
+        title: '5. flow direction',
         nav: true,
         settings: {section: 'Examples of reorderable-repeat'},
         moduleId: 'examples/er5-reorderable-repeat-direction/index'
@@ -186,7 +186,7 @@ export class App {
       },
       {
         route: 'er7-multi-lists', name: 'er7-multi-lists',
-        title: '6. multi-lists with reorderable-group-for',
+        title: '7. multi-lists with reorderable-group-for',
         nav: true,
         settings: {section: 'Examples of reorderable-repeat'},
         moduleId: 'examples/er7-multi-lists-with-group-for/index'
