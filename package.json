@@ -65,6 +65,7 @@
     "karma-sourcemap-loader": "^0.3.7",
     "lazypipe": "^1.0.1",
     "minimatch": "^3.0.4",
+    "sass-lint": "^1.12.1",
     "standard-changelog": "^1.0.19",
     "through2": "^2.0.3",
     "uglify-js": "^3.3.22",
