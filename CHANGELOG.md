@@ -1,3 +1,18 @@
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.1.9...v0.2.0) (2018-04-27)
+
+
+### Bug Fixes
+
+* add missing sass-lint ([dc57906](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/commit/dc57906))
+
+
+### Features
+
+* update doc for reorderable-group-for in latest v0.6.0 ([629ec04](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/commit/629ec04))
+
+
+
 <a name="0.1.9"></a>
 ## [0.1.9](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.1.8...v0.1.9) (2018-04-27)
 
