@@ -10,6 +10,8 @@ A customised Aurelia repeater that supports drag-and-drop reordering automatical
 
 > with webpack, `npm i bcx-aurelia-reorderable-repeat`.
 
+> v0.4.0 has breaking change for aurelia-cli requirejs/systemjs user. For v0.3.x users, after upgrade to latest version, please run `au import bcx-aurelia-reorderable-repeat` to update `aureila.json` dependencies config. The main file in package.json is now `dist/index.js`, not `dist/amd/index.js`.
+
 ### Load plugin
 
 In you app main.js file.
