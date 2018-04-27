@@ -1,3 +1,8 @@
+<a name="0.1.9"></a>
+## [0.1.9](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.1.8...v0.1.9) (2018-04-27)
+
+
+
 <a name="0.1.8"></a>
 ## [0.1.8](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.1.7...v0.1.8) (2018-04-27)
 
