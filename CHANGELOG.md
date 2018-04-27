@@ -1,3 +1,13 @@
+<a name="0.1.8"></a>
+## [0.1.8](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.1.7...v0.1.8) (2018-04-27)
+
+
+### Features
+
+* document reorderable-group. ([12a5c68](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/commit/12a5c68))
+
+
+
 <a name="0.1.7"></a>
 ## [0.1.7](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.1.6...v0.1.7) (2018-04-26)
 
