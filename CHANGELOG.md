@@ -1,3 +1,13 @@
+<a name="0.2.2"></a>
+## [0.2.2](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.2.1...v0.2.2) (2018-04-28)
+
+
+### Bug Fixes
+
+* avoid crosstalk ([ef7bd71](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/commit/ef7bd71))
+
+
+
 <a name="0.2.1"></a>
 ## [0.2.1](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.2.0...v0.2.1) (2018-04-27)
 
