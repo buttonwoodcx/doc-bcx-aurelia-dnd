@@ -42,6 +42,8 @@ If you have not read [tutorial](#/overview) for `bcx-aurelia-dnd`, we recommend 
 
 To customise the DOM under drag, you can overwrite `.reorderable-repeat-dragging-me` in your style sheet, or use `.reorderable-repeat-dragging-me.your-class` to localize the customisation.
 
+> When customising, remember to unset the visibility first `visibility: visible; /* or inherit; */`.
+
 Here is a style customised version of previous example.
 
 <compose view-model="../examples/er2-reorderable-repeat-customise-style/index"></compose>
@@ -101,5 +103,5 @@ If your DOM list flows rather from left to right (or from right to left), you ca
 
 <compose view-model="../examples/er5-reorderable-repeat-direction/index"></compose>
 
-Let's move on to [multi-lists reordering](#/multi-lists).
+Let's move on to [reordering across multiple lists](#/multi-lists).
 

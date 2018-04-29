@@ -49,4 +49,5 @@ table.table-container tr.reorderable-repeat-dragging-me td .handler {
   background-color: #5D99BD;
   color: white;
   padding: 0.5rem;
+  cursor: default;
 }
