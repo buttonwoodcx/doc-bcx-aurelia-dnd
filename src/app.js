@@ -46,14 +46,14 @@ export class App {
       },
       {
         route: 'customise-preview-and-source-handler', name: 'customise-preview-and-source-handler',
-        title: 'Customise Preview, Optional Source Handler',
+        title: 'Customise preview, optional source handler',
         nav: true,
         settings: {section: 'Tutorial'},
         moduleId: 'tutorial/customise-preview-and-source-handler.html'
       },
       {
         route: 'reorderable-repeat', name: 'reorderable-repeat',
-        title: 'reorderable-repeat Basics',
+        title: 'Basics',
         nav: true,
         settings: {section: 'Tutorial of reorderable-repeat'},
         moduleId: 'tutorial/reorderable-repeat.html'

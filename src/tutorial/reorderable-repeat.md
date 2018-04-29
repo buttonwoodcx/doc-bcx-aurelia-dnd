@@ -1,4 +1,4 @@
-# bcx-aurelia-reorderable-repeat
+# bcx-aurelia-reorderable-repeat basics
 
 A customised Aurelia repeater that supports drag-and-drop reordering automatically.
 

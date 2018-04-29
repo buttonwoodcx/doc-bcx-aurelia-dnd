@@ -1,4 +1,4 @@
-## bcx-aurelia-reorderable-repeat Limitation
+## bcx-aurelia-reorderable-repeat limitation
 
 `bcx-aurelia-reorderable-repeat` doesn't support repeat on `template` element.
 
