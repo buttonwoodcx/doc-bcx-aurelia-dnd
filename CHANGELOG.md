@@ -1,3 +1,13 @@
+<a name="0.2.5"></a>
+## [0.2.5](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.2.4...v0.2.5) (2018-05-24)
+
+
+### Bug Fixes
+
+* update bcx-doc-base to fix copy issue in codemirror editor ([a1b8c30](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/commit/a1b8c30))
+
+
+
 <a name="0.2.4"></a>
 ## [0.2.4](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.2.3...v0.2.4) (2018-04-29)
 
