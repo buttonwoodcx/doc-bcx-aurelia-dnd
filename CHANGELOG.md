@@ -1,3 +1,13 @@
+<a name="0.2.6"></a>
+## [0.2.6](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.2.5...v0.2.6) (2018-06-26)
+
+
+### Features
+
+* upgrade bcx-aurelia-dnd to 0.4.7 ([c6ebe6d](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/commit/c6ebe6d))
+
+
+
 <a name="0.2.5"></a>
 ## [0.2.5](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.2.4...v0.2.5) (2018-05-24)
 
