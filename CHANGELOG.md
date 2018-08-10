@@ -1,3 +1,13 @@
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.2.6...v0.3.0) (2018-08-10)
+
+
+### Features
+
+* new example: move and resize ([2a7bffd](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/commit/2a7bffd))
+
+
+
 <a name="0.2.6"></a>
 ## [0.2.6](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.2.5...v0.2.6) (2018-06-26)
 
