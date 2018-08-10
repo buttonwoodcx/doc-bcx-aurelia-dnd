@@ -143,6 +143,13 @@ export class App {
         moduleId: 'examples/e6-reorder-list/index'
       },
       {
+        route: 'e7-move-and-resize', name: 'e7-move-and-resize',
+        title: '7. move and resize',
+        nav: true,
+        settings: {section: 'Examples'},
+        moduleId: 'examples/e7-move-and-resize/index'
+      },
+      {
         route: 'er1-reorderable-repeat', name: 'er1-reorderable-repeat',
         title: '1. reorder list',
         nav: true,
