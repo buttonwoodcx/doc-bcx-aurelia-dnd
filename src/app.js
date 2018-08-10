@@ -150,6 +150,13 @@ export class App {
         moduleId: 'examples/e7-move-and-resize/index'
       },
       {
+        route: 'more-examples', name: 'more-examples',
+        title: '8. want more examples?',
+        nav: true,
+        settings: {section: 'Examples'},
+        moduleId: 'more-examples.html'
+      },
+      {
         route: 'er1-reorderable-repeat', name: 'er1-reorderable-repeat',
         title: '1. reorder list',
         nav: true,
