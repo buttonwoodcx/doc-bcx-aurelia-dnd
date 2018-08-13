@@ -9,7 +9,6 @@
 
 
 .e7-example-box .item-resize {
-  z-index: 2;
   position: absolute;
   display: block;
 }
