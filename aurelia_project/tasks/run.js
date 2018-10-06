@@ -21,7 +21,7 @@ let serve = gulp.series(
           next();
         }]
       }
-    }, function (err, bs) {
+    }, function(err, bs) {
       if (err) return done(err);
       let urls = bs.options.get('urls').toJS();
       log(`Application Available At: ${urls.local}`);

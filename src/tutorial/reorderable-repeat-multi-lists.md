@@ -14,6 +14,8 @@ By default, `reorderable-repeat` isolates every repeaters to avoid crosstalk. To
 
 > Different from other attributes like `reorderable-direction`, `reorderable-group` can only accept string literal, not a binding. `reorderable-group.bind="group"` would not work. We only support static group name, not dynamic group name.
 
+> In multi-list mode, the `reorderable-after-reordering` callback won't get the 2nd argument (the change `{fromIndex, toIndex}`) if the change is crossing two lists. It only gets the 2nd argument of change when the reordering is locally within one of the lists.
+
 Too easy? Not yet, there is one big problem. Try move all numbers to letters array, once left side is empty, there is no way to move any item back!
 
 What's going on?

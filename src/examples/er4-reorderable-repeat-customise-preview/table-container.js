@@ -14,8 +14,9 @@ export class TableContainer {
     return jq.get(0);
   }
 
-  orderChanged(orderedItems) {
+  orderChanged(orderedItems, change) {
     /* eslint no-console: 0 */
     console.log('Ordered items: ' + JSON.stringify(orderedItems));
+    console.log('Change: ' + JSON.stringify(change));
   }
 }

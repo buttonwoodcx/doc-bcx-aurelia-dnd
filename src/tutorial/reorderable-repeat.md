@@ -85,7 +85,7 @@ Here we use `reorderable-dnd-preview="drawPreview"`, you can also use `reorderab
 
 Use optional attribute `reorderable-after-reordering` to specify a callback. Like `reorderable-dnd-preview`, it supports 2 forms.
 
-> When using the string form with method name, that method will receive the array model that has been reordered.
+> When using the string form with method name, that method will receive 2 arguments: 1) the array model that has been reordered, 2) the change `{fromIndex, toIndex}`.
 
 The example above shows the usage of `reorderable-after-reordering`, it prints the list in browser console after reordering.
 
