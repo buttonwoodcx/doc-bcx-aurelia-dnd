@@ -1,3 +1,13 @@
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.3.5...v0.4.0) (2018-10-06)
+
+
+### Features
+
+* update doc on new feature of after-reordering ([a9cde84](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/commit/a9cde84))
+
+
+
 <a name="0.3.5"></a>
 ## [0.3.5](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.3.4...v0.3.5) (2018-10-04)
 
