@@ -20,3 +20,7 @@
   overflow: hidden;
   background: white;
 }
+
+.er2-list-item:not(:first-child) {
+  margin-top: -1px;
+}

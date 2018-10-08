@@ -9,7 +9,7 @@
   flex: 1 1 0;
   margin: 10px;
   padding: 10px;
-  background-color: lightgray;
+  background-color: #eee;
 }
 
 .er7-list-item {
@@ -23,8 +23,12 @@
   background: white;
 }
 
+.er7-list-item:not(:first-child) {
+  margin-top: -1px;
+}
+
 .er7-list-item.reorderable-repeat-dragging-me {
   visibility: visible; /* unset visibility: hidden */
   color: transparent; /* hide text */
-  background: linear-gradient(to right, lightgrey, white, lightgrey);
+  background-color: #ddd;
 }
