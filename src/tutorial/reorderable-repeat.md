@@ -8,7 +8,7 @@ A customised Aurelia repeater that supports drag-and-drop reordering automatical
 
 `npm i bcx-aurelia-reorderable-repeat` or `yarn add bcx-aurelia-reorderable-repeat`.
 
-> For aurelia-cli users, please make sure to use version `1.0.0-beta.1` or above.
+> For aurelia-cli users, please make sure to use aurelia-cli version `1.0.0-beta.1` or above.
 
 ### Load plugin
 
