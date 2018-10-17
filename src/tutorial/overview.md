@@ -11,7 +11,7 @@ git clone git@github.com:buttonwoodcx/doc-bcx-aurelia-dnd.git
 cd doc-bcx-aurelia-dnd
 npm i -g aurelia-cli # if you have not installed aurelia-cli
 npm i # yarn doesn't work because of https://github.com/yarnpkg/yarn/issues/5235
-au run --watch
+au run
 ```
 
 ## We use [`dragula`](https://bevacqua.github.io/dragula/) algorithm, but `bcx-aurelia-dnd` is not a `dragula` wrapper
@@ -28,11 +28,9 @@ There are few alternative projects in Aurelia community. List them here for refe
 
 ## Use inside Aurelia app
 
-To start with your Aurelia app.
+`npm i bcx-aurelia-dnd` or `yarn add bcx-aurelia-dnd`.
 
-> with aurelia-cli `au install bcx-aurelia-dnd`.
-
-> with webpack `npm i bcx-aurelia-dnd`.
+> For aurelia-cli users, please make sure to use aurelia-cli version `1.0.0-beta.1` or above.
 
 There is a single class `DndService` provided by `bcx-aurelia-dnd`. Inject it to your component.
 
