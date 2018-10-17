@@ -1,3 +1,13 @@
+<a name="0.4.4"></a>
+## [0.4.4](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.4.3...v0.4.4) (2018-10-17)
+
+
+### Bug Fixes
+
+* avoid 1px offset ([093175d](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/commit/093175d)), closes [buttonwoodcx/bcx-aurelia-dnd#9](https://github.com/buttonwoodcx/bcx-aurelia-dnd/issues/9)
+
+
+
 <a name="0.4.3"></a>
 ## [0.4.3](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.4.2...v0.4.3) (2018-10-09)
 
