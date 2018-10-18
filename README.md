@@ -11,7 +11,7 @@ npm i -g aurelia-cli
 # build node_modules
 npm i # yarn doesn't work because of https://github.com/yarnpkg/yarn/issues/5235
 # run the app
-au run --watch
+au run
 ```
 
 ## For reference
