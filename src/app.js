@@ -1,4 +1,10 @@
+import {version as dndVersion} from 'bcx-aurelia-dnd/package.json';
+import {version as rrVersion} from 'bcx-aurelia-reorderable-repeat/package.json';
+
 export class App {
+  dndVersion = dndVersion;
+  rrVersion = rrVersion;
+
   configureRouter(config, router) {
     this.router = router;
 
