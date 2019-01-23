@@ -13,7 +13,7 @@ Let's implement our first example ["1. move object"](#/e1-simple-move) step by s
 
 There is a container of three boxes inside. To implement moving box, we register every box as a source which we want to drag, and register the container as the target which will receive a drop.
 
-### Implement source
+## Implement source
 
 The box component.
 
@@ -73,7 +73,7 @@ Now DOM is hooked up, source `delegate` needs to provide `dndModel()` callback, 
 
 > You should make your own convention of the model shape. A common practice is to provide a `type` in the model, which you can easily check against in other parts of your app.
 
-### Here is what we got so far, movable boxes
+## Here is what we got so far, movable boxes
 
 There is no effect on drop, because we have not registered any DnD target yet.
 
