@@ -16,7 +16,7 @@
   "dependencies": {
     "aurelia-animator-css": "^1.0.4",
     "aurelia-bootstrapper": "^2.3.2",
-    "bcx-aurelia-dnd": "^1.0.0",
+    "bcx-aurelia-dnd": "^1.0.1",
     "bcx-aurelia-reorderable-repeat": "^1.1.1",
     "bcx-doc-base": "buttonwoodcx/bcx-doc-base#v1.0.6",
     "bluebird": "^3.5.3",
