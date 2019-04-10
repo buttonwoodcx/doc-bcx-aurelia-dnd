@@ -156,8 +156,15 @@ export class App {
         moduleId: 'examples/e7-move-and-resize/index'
       },
       {
+        route: 'e8-move-and-resize-plus-snap', name: 'e8-move-and-resize-plus-snap',
+        title: '8. move and resize, plus snap',
+        nav: true,
+        settings: {section: 'Examples'},
+        moduleId: 'examples/e8-move-and-resize-plus-snap/index'
+      },
+      {
         route: 'more-examples', name: 'more-examples',
-        title: '8. want more examples?',
+        title: '9. want more examples?',
         nav: true,
         settings: {section: 'Examples'},
         moduleId: 'more-examples.html'

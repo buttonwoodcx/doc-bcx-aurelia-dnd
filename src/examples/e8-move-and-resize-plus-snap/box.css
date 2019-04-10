@@ -1,0 +1,86 @@
+.e7-example-box {
+  position: absolute;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  background: white;
+  line-height: 1;
+}
+
+
+.e7-example-box .item-resize {
+  position: absolute;
+  display: block;
+}
+
+/* just for demo */
+.e7-show-resize-area .item-resize {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  outline: 1px solid gray;
+}
+
+
+.e7-example-box .item-resize.item-resize-n {
+  top: -4px;
+  height: 14px;
+  left: 10px;
+  right: 10px;
+  cursor: ns-resize;
+}
+
+.e7-example-box .item-resize.item-resize-e {
+  right: -4px;
+  width: 14px;
+  top: 10px;
+  bottom: 10px;
+  cursor: ew-resize;
+}
+
+.e7-example-box .item-resize.item-resize-s {
+  bottom: -4px;
+  height: 14px;
+  left: 10px;
+  right: 10px;
+  cursor: ns-resize;
+}
+
+.e7-example-box .item-resize.item-resize-w {
+  left: -4px;
+  width: 14px;
+  top: 10px;
+  bottom: 10px;
+  cursor: ew-resize;
+}
+
+.e7-example-box .item-resize.item-resize-ne {
+  top: -4px;
+  right: -4px;
+  width: 14px;
+  height: 14px;
+  cursor: nesw-resize;
+}
+
+.e7-example-box .item-resize.item-resize-sw {
+  bottom: -4px;
+  left: -4px;
+  width: 14px;
+  height: 14px;
+  cursor: nesw-resize;
+}
+
+.e7-example-box .item-resize.item-resize-nw {
+  top: -4px;
+  left: -4px;
+  width: 14px;
+  height: 14px;
+  cursor: nwse-resize;
+}
+
+.e7-example-box .item-resize.item-resize-se {
+  bottom: -4px;
+  right: -4px;
+  width: 14px;
+  height: 14px;
+  cursor: nwse-resize;
+}
