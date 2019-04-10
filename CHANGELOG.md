@@ -1,3 +1,12 @@
+# [0.5.0](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.4.13...v0.5.0) (2019-04-10)
+
+
+### Features
+
+* new example on snapping ([57be46a](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/commit/57be46a))
+
+
+
 ## [0.4.13](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.4.12...v0.4.13) (2019-04-09)
 
 
