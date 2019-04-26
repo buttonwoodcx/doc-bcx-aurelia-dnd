@@ -163,6 +163,13 @@ export class App {
         moduleId: 'examples/e8-move-and-resize-plus-snap/index'
       },
       {
+        route: 'e9-auto-scroll', name: 'e9-auto-scroll',
+        title: '9. auto-scrolling on reordering',
+        nav: true,
+        settings: {section: 'Examples'},
+        moduleId: 'examples/e9-auto-scroll/index'
+      },
+      {
         route: 'more-examples', name: 'more-examples',
         title: '9. want more examples?',
         nav: true,
