@@ -1,3 +1,12 @@
+# [0.6.0](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.5.3...v0.6.0) (2019-09-09)
+
+
+### Features
+
+* doc after-reordering arguments for multi-lists mode ([7b64d99](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/commit/7b64d99))
+
+
+
 ## [0.5.3](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.5.2...v0.5.3) (2019-05-11)
 
 
