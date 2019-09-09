@@ -14,8 +14,6 @@ By default, `reorderable-repeat` isolates every repeaters to avoid crosstalk. To
 
 > Different from other attributes like `reorderable-direction`, `reorderable-group` can only accept string literal, not a binding. `reorderable-group.bind="group"` would not work. We only support static group name, not dynamic group name.
 
-> In multi-list mode, the `reorderable-after-reordering` callback won't get the 2nd argument (the change `{fromIndex, toIndex}`) if the change is crossing two lists. It only gets the 2nd argument of change when the reordering is locally within one of the lists.
-
 Too easy? Not yet, there is one big problem. Try move all numbers to letters array, once left side is empty, there is no way to move any item back!
 
 What's going on?
@@ -43,5 +41,15 @@ Now even empty array have some DOM to receive DnD events.
 > It's not required to use `reorderable-group-for` on parent element of the repeater. You can use on any DOM element, it will find the corresponding repeater automatically.
 
 > `reorderable-group-for` is named after `<label for="field">`. You can think it behaves like a `label` (`reorderable-group-for`) to an `input` (`reorderable-repeater` with group). `label` can be parent element of `input` or sibling element of `input`, when you click the `label` (hover the `reorderable-group-for`), it behaves like you clicked the `input` (hover child views of `reorderable-repeater`).
+
+### Callback after reordering
+
+The optional attribute `reorderable-after-reordering` provides little more information to the callback.
+
+> When using the string form with method name, that method will receive 2 arguments: 1) the array model that has been reordered, 2) the change `{item, fromIndex, toIndexm, removedFromThisList, insertedToThisList }`.
+
+When moving an item across 2 lists, both source list and target list can receive a after reordering callback. The callback on source list will see `removedFromThisList: true`, the callback on target list will see `insertedToThisList: true`.
+
+The example above shows the usage of `reorderable-after-reordering` in multiple lists mode.
 
 That concludes all features of `bcx-aurelia-reorderable-repeat`.

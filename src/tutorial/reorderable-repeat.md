@@ -83,7 +83,9 @@ Here we use `reorderable-dnd-preview="drawPreview"`, you can also use `reorderab
 
 Use optional attribute `reorderable-after-reordering` to specify a callback. Like `reorderable-dnd-preview`, it supports 2 forms.
 
-> When using the string form with method name, that method will receive 2 arguments: 1) the array model that has been reordered, 2) the change `{fromIndex, toIndex}`.
+> When using the string form with method name, that method will receive 2 arguments: 1) the array model that has been reordered, 2) the change `{item, fromIndex, toIndex}`. `item` is the model object that has been moved.
+
+> The change object also contains `{removedFromThisList: true, insertedToThisList: true}`. The two properties are designed for multiple lists mode, see [next page](#/multi-lists) for more details.
 
 The example above shows the usage of `reorderable-after-reordering`, it prints the list in browser console after reordering.
 
