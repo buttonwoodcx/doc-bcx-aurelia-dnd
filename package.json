@@ -1,7 +1,7 @@
 {
   "name": "doc-bcx-aurelia-dnd",
   "description": "Document for bcx-aurelia-dnd and bcx-aurelia-reorderable-repeat",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "repository": {
     "type": "git",
     "url": "http://github.com/buttonwoodcx/doc-bcx-aurelia-dnd"
