@@ -42,6 +42,9 @@ export class Repository {
     this.resetIntention();
   }
 
+  // Note if you don't want to drag items back to this repository list,
+  // remove line `this.dndService.addTarget(this);` from attached(),
+  // and remove following three methods: dndCanDrop, dndHover and dndDrop.
   dndCanDrop(model) {
     // reorderable-group "er8"
     //
