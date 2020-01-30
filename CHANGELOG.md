@@ -1,3 +1,12 @@
+## [0.7.2](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.7.1...v0.7.2) (2020-01-30)
+
+
+### Bug Fixes
+
+* show missing files ([17a3e4b](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/commit/17a3e4b88c59b308b4a589ccc03eacee2b6b32f2))
+
+
+
 ## [0.7.1](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.7.0...v0.7.1) (2020-01-30)
 
 
