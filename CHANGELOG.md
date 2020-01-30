@@ -1,3 +1,12 @@
+# [0.7.0](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.6.0...v0.7.0) (2020-01-30)
+
+
+### Features
+
+* new advanced demo for reorderable-repeat ([238bd43](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/commit/238bd43c925c82dcc91b282b14d54c2a2a2e0a58))
+
+
+
 # [0.6.0](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.5.3...v0.6.0) (2019-09-09)
 
 
