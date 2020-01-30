@@ -1,0 +1,32 @@
+<template>
+  <require from="./list-container.css"></require>
+  <require from="./repository"></require>
+
+  <p>
+    Advanced demo mixing reorderable-repeat with bcx-aurelia-dnd.<br>
+    <small>Usse internal unpublished data shape of reorderable-repeat.</small>
+  </p>
+  <div class="er8-list-container">
+    <repository></repository>
+    <div class="er8-list" reorderable-group-for.bind="numbers">
+      Numbers
+      <div
+        class="er8-list-item"
+        reorderable-repeat.for="item of numbers"
+        reorderable-group="er8"
+        reorderable-after-reordering="numbersReordered">
+        ${item}
+      </div>
+    </div>
+    <div class="er8-list" reorderable-group-for.bind="letters">
+      Letters
+      <div
+        class="er8-list-item"
+        reorderable-repeat.for="item of letters"
+        reorderable-group="er8"
+        reorderable-after-reordering="lettersReordered">
+        ${item}
+      </div>
+    </div>
+  </div>
+</template>

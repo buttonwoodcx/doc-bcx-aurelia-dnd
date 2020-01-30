@@ -224,7 +224,15 @@ export class App {
         nav: true,
         settings: {section: 'Examples of reorderable-repeat'},
         moduleId: 'examples/er7-multi-lists-with-group-for/index'
+      },
+      {
+        route: 'er8-multi-lists-mix-with-aurelia-dnd', name: 'er8-multi-lists-mix-with-aurelia-dnd',
+        title: '8. multi-lists mix with aurelia-dnd',
+        nav: true,
+        settings: {section: 'Examples of reorderable-repeat'},
+        moduleId: 'examples/er8-multi-lists-mix-with-aurelia-dnd/index'
       }
+
     ]);
   }
 }

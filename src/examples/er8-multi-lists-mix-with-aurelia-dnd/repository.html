@@ -1,0 +1,6 @@
+<template class="er8-list" ref="dndElement">
+  <require from="./loose-item"></require>
+  Loose Items
+  <br><small>(unreorderable)</small>
+  <loose-item repeat.for="item of patchedItems" item.bind="item" index.bind="$index"></loose-item>
+</template>
