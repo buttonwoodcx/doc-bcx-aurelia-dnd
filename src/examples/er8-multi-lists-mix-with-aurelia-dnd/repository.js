@@ -17,7 +17,11 @@ export class Repository {
     this.subscribers = [
       this.ea.subscribe('dnd:willStart', () => this.resetIntention()),
       this.ea.subscribe('dnd:didEnd', () => this.fulfillIntention()),
-      this.ea.subscribe('reorderable-group:intention-changed', intention => this.intention = intention),
+      this.ea.subscribe('reorderable-group:intention-changed', intention => {
+        if (intention.type === 'bcx-aurelia-reorderable-repeat:er8') {
+          this.intention = intention;
+        }
+      }),
     ];
   }
 
