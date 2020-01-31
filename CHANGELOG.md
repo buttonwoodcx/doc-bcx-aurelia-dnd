@@ -1,3 +1,12 @@
+## [0.7.4](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.7.3...v0.7.4) (2020-01-31)
+
+
+### Bug Fixes
+
+* change intention type ([10e7bd4](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/commit/10e7bd4f7634b24ca612578a3f8bd4a0ece63d4e))
+
+
+
 ## [0.7.3](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.7.2...v0.7.3) (2020-01-30)
 
 
