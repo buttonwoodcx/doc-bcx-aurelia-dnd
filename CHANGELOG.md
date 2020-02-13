@@ -1,3 +1,7 @@
+# [0.8.0](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.7.4...v0.8.0) (2020-02-13)
+
+
+
 ## [0.7.4](https://github.com/buttonwoodcx/doc-bcx-aurelia-dnd/compare/v0.7.3...v0.7.4) (2020-01-31)
 
 
