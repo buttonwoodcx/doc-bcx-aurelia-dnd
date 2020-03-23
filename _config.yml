@@ -1,6 +1,6 @@
 remote_theme: pmarsceill/just-the-docs
 # color_scheme: dark
-baseurl: /wip-doc-bcx-aurelia
+baseurl: /doc-bcx-aurelia-dnd
 search_enabled: true
 title: bcx-aurelia-dnd
 aux_links:
