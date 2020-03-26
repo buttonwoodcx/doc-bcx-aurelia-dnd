@@ -10,4 +10,4 @@ parent: Examples - reorderable-repeat
 
 Use [dom_autoscroll](https://github.com/hollowdoor/dom_autoscroller) to auto scroll when near the edges of scrollable container.
 
-<iframe style="width: 100%; height: 600px; border: 0;" loading="lazy" src="https://gist.dumber.local/?gist=7223c0273e749df9cff8d22129d89123&open=src%2Flist-container.js&open=src%2Flist-container.html"></iframe>
+<iframe style="width: 100%; height: 600px; border: 0;" loading="lazy" src="https://gist.dumber.app/?gist=7223c0273e749df9cff8d22129d89123&open=src%2Flist-container.js&open=src%2Flist-container.html"></iframe>
