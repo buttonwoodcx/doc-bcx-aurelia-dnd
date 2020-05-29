@@ -10,7 +10,7 @@ parent: Get Started - Reorderable Repeat
 
 In the html template, simply use `reorderable-repeat.for` in the place of normal `repeat.for`. That's it!
 
-<iframe style="width: 100%; height: 420px; border: 0;" loading="lazy" src="https://gist.dumber.app/?gist=ad6f9292c4778d3fa30a450db2319ac0&open=src%2Flist-container.html&open=src%2Flist-container2.html"></iframe>
+<iframe style="width: 100%; height: 420px; border: 2px solid #343a40; border-radius: 3px;" loading="lazy" src="https://gist.dumber.app/?gist=ad6f9292c4778d3fa30a450db2319ac0&open=src%2Flist-container.html&open=src%2Flist-container2.html"></iframe>
 
 ### Customise item style under drag
 
@@ -36,7 +36,7 @@ To customise the DOM under drag, you can overwrite `.reorderable-repeat-dragging
 
 Here is a style customised version of previous example.
 
-<iframe style="width: 100%; height: 420px; border: 0;" loading="lazy" src="https://gist.dumber.app/?gist=dda294d3671666259ac4022697adc412&open=src%2Flist-container.css"></iframe>
+<iframe style="width: 100%; height: 420px; border: 2px solid #343a40; border-radius: 3px;" loading="lazy" src="https://gist.dumber.app/?gist=dda294d3671666259ac4022697adc412&open=src%2Flist-container.css"></iframe>
 
 Note in customisation, you need to unset `visibility` first.
 
@@ -48,7 +48,7 @@ Note in customisation, you need to unset `visibility` first.
 
 > `reorderable-dnd-handler-selector` is used on every source elements with `element.querySelector(...)` to find out the handler.
 
-<iframe style="width: 100%; height: 420px; border: 0;" loading="lazy" src="https://gist.dumber.app/?gist=62c6241f041c8918b693956178f69211&open=src%2Ftable-container.js&open=src%2Ftable-container.html"></iframe>
+<iframe style="width: 100%; height: 420px; border: 2px solid #343a40; border-radius: 3px;" loading="lazy" src="https://gist.dumber.app/?gist=62c6241f041c8918b693956178f69211&open=src%2Ftable-container.js&open=src%2Ftable-container.html"></iframe>
 
 ### Customise Preview
 
@@ -67,7 +67,7 @@ To draw a customised preview, use optional attribute `reorderable-dnd-preview`. 
 
 * `reorderable-dnd-preview.call="methodInScope(smthInScope, smth2InScope)"` the evaluated result of the function call must be a DOM element (unattached to DOM tree) with reasonable size.
 
-<iframe style="width: 100%; height: 420px; border: 0;" loading="lazy" src="https://gist.dumber.app/?gist=8784f59137d97050c49257c58eab5bdf&open=src%2Ftable-container.js&open=src%2Ftable-container.html"></iframe>
+<iframe style="width: 100%; height: 420px; border: 2px solid #343a40; border-radius: 3px;" loading="lazy" src="https://gist.dumber.app/?gist=8784f59137d97050c49257c58eab5bdf&open=src%2Ftable-container.js&open=src%2Ftable-container.html"></iframe>
 
 Here we use `reorderable-dnd-preview="drawPreview"`, you can also use `reorderable-dnd-preview.call="drawPreview(item)"`
 
@@ -93,7 +93,7 @@ If your DOM list flows rather from left to right (or from right to left), you ca
 
 > Even in layout with `flex-wrap: wrap;`, `reorderable-repeat` still works fine.
 
-<iframe style="width: 100%; height: 420px; border: 0;" loading="lazy" src="https://gist.dumber.app/?gist=dec3f4f6a53ec51947365dc3e2ace1dd&open=src%2Fcontainer.html"></iframe>
+<iframe style="width: 100%; height: 420px; border: 2px solid #343a40; border-radius: 3px;" loading="lazy" src="https://gist.dumber.app/?gist=dec3f4f6a53ec51947365dc3e2ace1dd&open=src%2Fcontainer.html"></iframe>
 
 Let's move on to [reordering across multiple lists](./multi-lists).
 

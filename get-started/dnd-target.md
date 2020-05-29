@@ -83,7 +83,7 @@ The reason behind this, is that `DndService` doesn't retain the source delegate/
 
 With that much code, we got movable boxes.
 
-<iframe style="width: 100%; height: 420px; border: 0;" loading="lazy" src="https://gist.dumber.app/?gist=d52fc1221b6eb48853cd22b0c1cb2789&open=src%2Fcontainer.js&open=src%2Fcontainer.html"></iframe>
+<iframe style="width: 100%; height: 420px; border: 2px solid #343a40; border-radius: 3px;" loading="lazy" src="https://gist.dumber.app/?gist=d52fc1221b6eb48853cd22b0c1cb2789&open=src%2Fcontainer.js&open=src%2Fcontainer.html"></iframe>
 
 There is one more thing we want to fix. During dragging a box, the original source box still presents. **How to hide the original box while dragging?**
 
@@ -129,7 +129,7 @@ Hide the element when dragging, so user only sees the preview element during DnD
 
 Now we got the full version of the first example.
 
-<iframe style="width: 100%; height: 420px; border: 0;" loading="lazy" src="https://gist.dumber.app/?gist=da80d504cf7df57ab326d91e478aac72&open=src%2Fbox.js&open=src%2Fbox.html&open=src%2Fcontainer.js&open=src%2Fcontainer.html"></iframe>
+<iframe style="width: 100%; height: 420px; border: 2px solid #343a40; border-radius: 3px;" loading="lazy" src="https://gist.dumber.app/?gist=da80d504cf7df57ab326d91e478aac72&open=src%2Fbox.js&open=src%2Fbox.html&open=src%2Fcontainer.js&open=src%2Fcontainer.html"></iframe>
 
 ## Crosstalk
 

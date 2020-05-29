@@ -14,4 +14,4 @@ Use [dom_autoscroll](https://github.com/hollowdoor/dom_autoscroller) to auto scr
 
 This verbose demo also shows the basic algorithm behind reorderable-repeat.
 
-<iframe style="width: 100%; height: 600px; border: 0;" loading="lazy" src="https://gist.dumber.app/?gist=eedbd9b8b935b281f95395e624029230&open=src%2Flist-container.js&open=src%2Flist-container.html"></iframe>
+<iframe style="width: 100%; height: 600px; border: 2px solid #343a40; border-radius: 3px;" loading="lazy" src="https://gist.dumber.app/?gist=eedbd9b8b935b281f95395e624029230&open=src%2Flist-container.js&open=src%2Flist-container.html"></iframe>

@@ -17,7 +17,7 @@ DnD source `delegate` has an optional callback `dndPreview(model)` to draw custo
 
 In this tutorial, we use jQuery (not required) to create DOM element.
 
-<iframe style="width: 100%; height: 420px; border: 0;" loading="lazy" src="https://gist.dumber.app/?gist=ac46f8bcdf481ddfa9c7a03646949890&open=src%2Fadd-box.js&open=src%2Fadd-box.html&open=src%2Fadd-money.js&open=src%2Fadd-money.html&open=src%2Fbox.js&open=src%2Fbox.html&open=src%2Fcontainer.js&open=src%2Fcontainer.html"></iframe>
+<iframe style="width: 100%; height: 420px; border: 2px solid #343a40; border-radius: 3px;" loading="lazy" src="https://gist.dumber.app/?gist=ac46f8bcdf481ddfa9c7a03646949890&open=src%2Fadd-box.js&open=src%2Fadd-box.html&open=src%2Fadd-money.js&open=src%2Fadd-money.html&open=src%2Fbox.js&open=src%2Fbox.html&open=src%2Fcontainer.js&open=src%2Fcontainer.html"></iframe>
 
 For "Box" and "Money" buttons, we use `dndPreview()` to customise preview.
 
@@ -84,6 +84,6 @@ You can mark parts of the source element with class `bcx-dnd-preview-hide` to pr
 
 Here is an example for both source handler and bcx-dnd-preview-hide.
 
-<iframe style="width: 100%; height: 420px; border: 0;" loading="lazy" src="https://gist.dumber.app/?gist=86107f1c3d045ff3fe7db1189961f681&open=src%2Fbox.js&open=src%2Fbox.html"></iframe>
+<iframe style="width: 100%; height: 420px; border: 2px solid #343a40; border-radius: 3px;" loading="lazy" src="https://gist.dumber.app/?gist=86107f1c3d045ff3fe7db1189961f681&open=src%2Fbox.js&open=src%2Fbox.html"></iframe>
 
 That concludes all features of `bcx-aurelia-dnd`.

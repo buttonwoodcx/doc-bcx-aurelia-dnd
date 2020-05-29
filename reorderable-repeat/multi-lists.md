@@ -14,7 +14,7 @@ By default, `reorderable-repeat` isolates every repeaters to avoid crosstalk. To
 
 > Here we demo two lists in one group. But there is no limit on how many lists you can assign to same group.
 
-<iframe style="width: 100%; height: 420px; border: 0;" loading="lazy" src="https://gist.dumber.app/?gist=d239d878d3cf6d0d18abb99322a3ccfb&open=src%2Fcontainer.html&open=src%2Fcontainer.js"></iframe>
+<iframe style="width: 100%; height: 420px; border: 2px solid #343a40; border-radius: 3px;" loading="lazy" src="https://gist.dumber.app/?gist=d239d878d3cf6d0d18abb99322a3ccfb&open=src%2Fcontainer.html&open=src%2Fcontainer.js"></iframe>
 
 > Since we are moving item across two or more arrays, you need to make sure the view templates for every repeaters in the group can **handle all model shapes**.
 
@@ -44,7 +44,7 @@ Usually, you use `reorderable-group-for` on some parent element of the repeater.
 
 Now even empty array have some DOM to receive DnD events.
 
-<iframe style="width: 100%; height: 420px; border: 0;" loading="lazy" src="https://gist.dumber.app/?gist=00567d4a038f06f7e5ac87e3662287aa&open=src%2Fcontainer.html&open=src%2Fcontainer.js"></iframe>
+<iframe style="width: 100%; height: 420px; border: 2px solid #343a40; border-radius: 3px;" loading="lazy" src="https://gist.dumber.app/?gist=00567d4a038f06f7e5ac87e3662287aa&open=src%2Fcontainer.html&open=src%2Fcontainer.js"></iframe>
 
 > It's not required to use `reorderable-group-for` on parent element of the repeater. You can use on any DOM element, it will find the corresponding repeater automatically.
 

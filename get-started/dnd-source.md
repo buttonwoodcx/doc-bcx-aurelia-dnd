@@ -19,7 +19,7 @@ Since the source and target are bound to DOM element, you need to register and d
 
 Let's implement our first example ["move box"](../examples/move-box) step by step.
 
-<iframe style="width: 100%; height: 420px; border: 0;" loading="lazy" src="https://gist.dumber.app/?gist=da80d504cf7df57ab326d91e478aac72&open=src%2Fbox.js&open=src%2Fbox.html&open=src%2Fcontainer.js&open=src%2Fcontainer.html"></iframe>
+<iframe style="width: 100%; height: 420px; border: 2px solid #343a40; border-radius: 3px;" loading="lazy" src="https://gist.dumber.app/?gist=da80d504cf7df57ab326d91e478aac72&open=src%2Fbox.js&open=src%2Fbox.html&open=src%2Fcontainer.js&open=src%2Fcontainer.html"></iframe>
 
 There is a container of three boxes inside. To implement moving box, we register every box as a source (we want to drag), and register the container as the target (receives a drop).
 
@@ -92,7 +92,7 @@ export class Box {
 
 There is no effect on drop, because we have not registered any DnD target yet.
 
-<iframe style="width: 100%; height: 420px; border: 0;" loading="lazy" src="https://gist.dumber.app/?gist=095688e86b96435b298125ec5da688dd&open=src%2Fbox.js&open=src%2Fbox.html"></iframe>
+<iframe style="width: 100%; height: 420px; border: 2px solid #343a40; border-radius: 3px;" loading="lazy" src="https://gist.dumber.app/?gist=095688e86b96435b298125ec5da688dd&open=src%2Fbox.js&open=src%2Fbox.html"></iframe>
 
 Let's move on to understand [DnD Preview](./dnd-preview).
 

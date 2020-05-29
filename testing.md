@@ -23,7 +23,7 @@ There is some sample test code in the second example ["move box with dndHover"](
 
 > No mouse events simulation needed to do unit test, as mouse events are hidden in `DndService`.
 
-<iframe style="width: 100%; height: 420px; border: 0;" loading="lazy" src="https://gist.dumber.app/?gist=c615285d86ccc35f54e8df7f54b36765&open=test%2Fbox.spec.js&open=test%2Fcontainer.spec.js"></iframe>
+<iframe style="width: 100%; height: 420px; border: 2px solid #343a40; border-radius: 3px;" loading="lazy" src="https://gist.dumber.app/?gist=c615285d86ccc35f54e8df7f54b36765&open=test%2Fbox.spec.js&open=test%2Fcontainer.spec.js"></iframe>
 
 ## Unit tests with view layer
 
