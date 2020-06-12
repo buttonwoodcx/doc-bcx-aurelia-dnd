@@ -46,10 +46,11 @@ const dndService = new DndService(sharedEa)
 ### dndService.model
 * the `model` object cached from the result of `sourceDelegate.dndModel()`. `undefined` when not in a DnD session.
 
-### dndService.addSource(delegate, options)
+### dndService.addSource(delegate: SourceDelegate, options: SourceOptions)
 * typically called inside Aurelia component's `attached()` callback.
 
 #### Source delegate
+TypeScript type `import { SourceDelegate } from 'bcx-aurelia-dnd';`
 * if `options.element` is absent, `delegate.dndElement` must be a DOM element, used for source element.
 * if `options.element` is present, `delegate.dndElement` is ignored, `options.element` is used as source element.
 * `delegate.dndModel()` is mandatory. Called once, when DnD session starts. It needs to return a model describing the meaning of a drag. There is no requirement on the shape of returned model.
@@ -58,16 +59,18 @@ const dndService = new DndService(sharedEa)
 * if `options.noPreview` is true, `delegate.dndPreview(model)` is ignored.
 
 #### Source options (optional)
+TypeScript type `import { SourceOptions } from 'bcx-aurelia-dnd';`
 * `options.element` manually pass a DOM element as source element, instead of default `delegate.dndElement`.
 * `options.handler` a DOM element as drag handler. It should be a decedent of source element. It limits where drag can start, doesn't affect preview.
 * `options.noPreview` turn off preview.
 * `options.hideCursor` hide cursor during a DnD session.
 * `options.centerPreviewToMousePosition` center preview to mouse position. Default preview position is aligned to source element top left corner.
 
-### dndService.addTarget(delegate, options)
+### dndService.addTarget(delegate: TargetDelegate, options: TargetOptions)
 * typically called inside Aurelia component's `attached()` callback.
 
 #### Target delegate
+TypeScript type `import { TargetDelegate } from 'bcx-aurelia-dnd';`
 * if `options.element` is absent, `delegate.dndElement` must be a DOM element, used for target element.
 * if `options.element` is present, `delegate.dndElement` is ignored, `options.element` is used as target element.
 * `delegate.dndCanDrop(model)`, mandatory. Called once, when DnD session starts. Input `model` is the cached result of `sourceDelegate.dndModel()`.
@@ -76,6 +79,7 @@ const dndService = new DndService(sharedEa)
 * When two (or more) target elements overlap, and both have `delegate.dnd.canDrop` true, `dndHover()` could be called on both target delegates at same time, but `dndDrop()` would be only called on the top target.
 
 #### dnd property on target delegate
+TypeScript type `import { TargetDelegateInjectedDnd } from 'bcx-aurelia-dnd';`
 * `dnd` property was created for every target delegate by `dndService`.
 * `delegate.dnd.isProcessing` exactly same as `dndService.isProcessing`.
 * `delegate.dnd.model` exactly same as `dndService.model`.
@@ -84,9 +88,11 @@ const dndService = new DndService(sharedEa)
 * `delegate.dnd.isHovering` `true` when mouse is hovering within target element region. `undefined` when not in a DnD session.
 
 #### Target options (optional)
+TypeScript type `import { TargetOptions } from 'bcx-aurelia-dnd';`
 * `options.element`, manually pass a DOM element as target element, instead of default `delegate.dndElement`.
 
-#### Location payload for dndHover(location) and dndDrop(location)
+#### Location payload for dndHover(location: DndLocation) and dndDrop(location: DndLocation)
+TypeScript type `import { DndLocation } from 'bcx-aurelia-dnd';`
 * `location.mouseStartAt` drag start mouse location {x, y} (not {left, top}).
 * `location.mouseEndAt` drop end mouse location {x, y} for `dndDrop()`, or current mouse location for `dndHover()`.
 * `location.sourceElementRect` source element location and size {x, y, width, height}.
@@ -99,7 +105,7 @@ const dndService = new DndService(sharedEa)
 
 > `sourceElementRect` is not current location of source element. It is a cached location for the source element when DnD session started.
 
-### dndService.removeSource(delegateOrElement) and dndService.removeTarget(delegateOrElement)
+### dndService.removeSource(delegateOrElement: SourceDelegate | Element) and dndService.removeTarget(delegateOrElement: TargetDelegate | Element)
 
 * typically called inside Aurelia component's `detached()` callback.
 
