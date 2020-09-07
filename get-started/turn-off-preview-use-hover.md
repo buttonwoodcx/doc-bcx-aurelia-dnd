@@ -33,7 +33,7 @@ For the target `delegate` (container),
 * in html template, instead of repeat on original items list, we repeat on patched items list, which is the original items patched by intention.
 * we capture user intention in `dndHover(location)` callback. Beware, don't mutate the real items list yet. We use temporary property `intention` to save this information.
 * we apply the intention in `dndDrop(location)` callback, as app user intended.
-* we reset temporary property `intention` before and after a DnD session by subscribing events `'dnd:willStart'` and `'dnd:didEnd'`.
+* we reset temporary property `intention` before and after a DnD session by subscribing events `'dnd:willStart'` and `'dnd:didEnd'` and `'dnd:didCancel'`.
 
 > When you use `dndHover` to constantly patch original list, depending on how complex the patch is, aurelia repeater might not be able to reuse existing child component, it might destroy old child components and create new components. That will trigger multiple add/remove Source/Target through `attached()` and `detached()` callback. `DndService` is totally fine with dynamical changing of sources and targets.
 
@@ -45,6 +45,7 @@ During a DnD session, `DndService` publishes four events you can subscribe to.
 * `dnd:didStart`, just after starting of DnD session, all `isProcessing`, `model`, `isHovering` ... have been set. But none of any targets received `dndHover()` / `dndDrop()` callback.
 * `dnd:willEnd`, just before end of a DnD session, all `isProcessing`, `model`, `isHovering` ... are still set. Just before a target (if there is valid one with canDrop:true under the mouse) receives `dndDrop()` callback.
 * `dnd:didEnd`, after a DnD session finished. all `isProcessing`, `model`, ... are set to `undefined`. Final `dndDrop()` callback has been fired if there is a valid target.
+* `dnd:didCancel` after a DnD session is cancelled by ESC key. all `isProcessing`, `model`, ... are set to `undefined`. No `dndDrop()` callback will be called. None of `dnd:willEnd` and `dnd:didEnd` events will be fired.
 
 You can use them to prepare or clean-up the environment for a DnD session.
 

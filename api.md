@@ -23,7 +23,7 @@ If you use bcx-aurelia-dnd not in an Aurelia app, you can create an instance man
 const dndService = new DndService();
 ```
 
-That's an instance without Aurelia Event Aggregator support. Events `'dnd:willStart'`, `'dnd:didStart'`, `'dnd:willEnd'`, `'dnd:willEnd'` would not fire.
+That's an instance without Aurelia Event Aggregator support. Events `'dnd:willStart'`, `'dnd:didStart'`, `'dnd:willEnd'`, `'dnd:didEnd'`, `'dnd:didCancel'` would not fire.
 
 You can also create an instance with Aurelia Event Aggregator support. Use that `sharedEa` to subscribe to events.
 
@@ -38,6 +38,7 @@ const dndService = new DndService(sharedEa)
 * `dnd:didStart` just after starting of DnD session, all `isProcessing`, `model`, `isHovering` ... have been set. But none of any targets received `dndHover()` / `dndDrop()` callback.
 * `dnd:willEnd` just before end of a DnD session, all `isProcessing`, `model`, `isHovering` ... are still set. Just before a target (if there is valid one with canDrop:true under the mouse) receives `dndDrop()` callback.
 * `dnd:didEnd` after a DnD session finished. all `isProcessing`, `model`, ... are set to `undefined`. Final `dndDrop()` callback has been fired if there is a valid target.
+* `dnd:didCancel` after a DnD session is cancelled by ESC key. all `isProcessing`, `model`, ... are set to `undefined`. No `dndDrop()` callback will be called. None of `dnd:willEnd` and `dnd:didEnd` events will be fired.
 
 
 ### dndService.isProcessing
