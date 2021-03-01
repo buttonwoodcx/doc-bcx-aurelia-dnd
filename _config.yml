@@ -1,5 +1,5 @@
 remote_theme: pmarsceill/just-the-docs
-# color_scheme: dark
+color_scheme: wider
 baseurl: /doc-bcx-aurelia-dnd
 search_enabled: true
 title: bcx-aurelia-dnd
