@@ -8,10 +8,6 @@ $media-queries: (
   xl: 1600px
 );
 
-.navigation-list-item .navigation-list-child-list {
-  display: block !important;
-}
-
 blockquote {
   background: #FCF9E4;
   border: 2px solid #E6D55B;
@@ -20,7 +16,6 @@ blockquote {
   margin-inline-start: 0;
   padding: 1rem 1rem 0;
 }
-
 
 iframe {
   margin-left: -$gutter-spacing-sm;
