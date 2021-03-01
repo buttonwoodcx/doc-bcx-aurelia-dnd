@@ -18,7 +18,7 @@ By default, `reorderable-repeat` isolates every repeaters to avoid crosstalk. To
 
 > Since we are moving item across two or more arrays, you need to make sure the view templates for every repeaters in the group can **handle all model shapes**.
 
-> Different from other attributes like `reorderable-direction`, `reorderable-group` can only accept string literal, not a binding. `reorderable-group.bind="group"` would not work. We only support static group name, not dynamic group name.
+> Since v1.4.0, `reorderable-group` also supports dynamic value through a binding, such as `reorderable-group.bind="group"` or `reorderable-group="${group}"`.
 
 Too easy? Not yet, there is one big problem. Try move all numbers to letters array, once left side is empty, there is no way to move any item back!
 
