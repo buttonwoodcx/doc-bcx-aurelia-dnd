@@ -89,7 +89,38 @@ There is one more thing we want to fix. During dragging a box, the original sour
 
 ## Style DnD Source Element
 
-While DnD target `delegate` got special injected `dnd` property, DnD source `delegate` got none. But you can observe two properties directly on `dndService` instance: `isProcessing` and `model`.
+While DnD target `delegate` got special injected `dnd` property, DnD source `delegate` got similar `dnd` injection onto source `delegate` (since v1.6.0+).
+
+* __dnd.isProcessing__, `true` during a DnD session.
+* __dnd.isStartingSource__, a boolean. During a DnD session, it's `true` for the DnD source that the DnD session was started with, false for every other DnD sources.
+
+> Here we use them to identify this box (DnD source) is being dragged.
+
+Hide the element when dragging, so user only sees the preview element during DnD session.
+
+```html
+<template>
+  <require from="./box.css"></require>
+
+  <div
+    ref="dndElement"
+    class="box"
+    style.bind="positionCss"
+    show.bind="!dnd.isStartingSource"
+  >
+    ${item.name}
+  </div>
+</template>
+```
+
+> Note we use `show.bind`, not `if.bind`. Aurelia `if.bind` adds/removes the element from DOM tree, while `show.bind` simply toggles css `visibility`. Because we have `ref="dndElement"` on this DOM node, we really don't want `if.bind` dynamically adds/removes it.
+
+> In Aurelia, it's a common practice to not put `ref` behind `if` or `repeat.for`.
+
+
+In addition, you can directly observe two properties directly on `dndService` instance: `isProcessing` and `model`.
+
+Following has same effect as the `dnd.isStartingSource` showed above. Actually this is the example documented for bcx-aurelia-dnd before v1.6.0.
 
 ```js
 export class Box {
@@ -101,12 +132,6 @@ export class Box {
   }
 }
 ```
-
-> `dndService.isProcessing` and `dndService.model` are exactly same as DnD target `delegate`'s `dnd.isProcessing` and `dnd.model`. In fact, you can use them as well in DnD target code.
-
-> Here we use them to identify this box (DnD source) is being dragged.
-
-Hide the element when dragging, so user only sees the preview element during DnD session.
 
 ```html
 <template>
@@ -123,9 +148,8 @@ Hide the element when dragging, so user only sees the preview element during DnD
 </template>
 ```
 
-> Note we use `show.bind`, not `if.bind`. Aurelia `if.bind` adds/removes the element from DOM tree, while `show.bind` simply toggles css `visibility`. Because we have `ref="dndElement"` on this DOM node, we really don't want `if.bind` dynamically adds/removes it.
+> `dndService.isProcessing` and `dndService.model` are exactly same as DnD target `delegate`'s `dnd.isProcessing` and `dnd.model`. In fact, you can use them as well in DnD target code.
 
-> In Aurelia, it's a common practice to not put `ref` behind `if` or `repeat.for`.
 
 Now we got the full version of the first example.
 

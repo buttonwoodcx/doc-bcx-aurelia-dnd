@@ -24,9 +24,9 @@ To demonstrate the purpose, we put a real-time clock on every boxes. You can see
 
 What happened in above code:
 
-For the source `delegate` (box), we turned off preview, removed `show.bind="!draggingMe"`.
+For the source `delegate` (box), we turned off preview, removed `show.bind="!dnd.isStartingSource"`.
 
-> You can bring `draggingMe` back, then use it to control the style of dragging box, for instance to adjust `background-color` or `box-shadow` when dragging.
+> You can bring `dnd.isStartingSource` back, then use it to control the style of dragging box, for instance to adjust `background-color` or `box-shadow` when dragging.
 
 For the target `delegate` (container),
 

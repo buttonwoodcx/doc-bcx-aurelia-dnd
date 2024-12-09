@@ -59,6 +59,12 @@ TypeScript type `import { SourceDelegate } from 'bcx-aurelia-dnd';`
 * `delegate.dndPreview(model)` is optional. Called once, when DnD session starts. It needs to return a newly created DOM element, with reasonable size, and not yet attached to DOM tree. Input `model` is the cached result of `sourceDelegate.dndModel()`. It could also return null or undefined, in that case, `DndService` will fall back to use default preview.
 * if `options.noPreview` is true, `delegate.dndPreview(model)` is ignored.
 
+#### dnd property on source delegate
+TypeScript type `import { SourceDelegateInjectedDnd } from 'bcx-aurelia-dnd';`
+* `dnd` property was filled or created (if does not exist) for every source delegate by `dndService`.
+* `delegate.dnd.isProcessing` exactly same as `dndService.isProcessing`.
+* `delegate.dnd.isStartingSource` a boolean. During a DnD session, it's `true` for the DnD source that the DnD session was started with, false for every other DnD sources..
+
 #### Source options (optional)
 TypeScript type `import { SourceOptions } from 'bcx-aurelia-dnd';`
 * `options.element` manually pass a DOM element as source element, instead of default `delegate.dndElement`.
@@ -81,7 +87,7 @@ TypeScript type `import { TargetDelegate } from 'bcx-aurelia-dnd';`
 
 #### dnd property on target delegate
 TypeScript type `import { TargetDelegateInjectedDnd } from 'bcx-aurelia-dnd';`
-* `dnd` property was created for every target delegate by `dndService`.
+* `dnd` property was filled or created (if does not exist) for every target delegate by `dndService`.
 * `delegate.dnd.isProcessing` exactly same as `dndService.isProcessing`.
 * `delegate.dnd.model` exactly same as `dndService.model`.
 * `delegate.dnd.canDrop` cached result of `delegate.dndCanDrop(model)`. `undefined` when not in a DnD session.
