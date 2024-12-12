@@ -39,7 +39,7 @@ The API design is heavily inspired by react-dnd. And it is largely simplified be
 
 ## bcx-aurelia-dnd is not an Aurelia plugin
 
-Technically, `bcx-aurelia-dnd` doesn't depend on Aurelia, it only uses `aurelia-event-aggregator` to provide better integration with Aurelia. There is nothing preventing you from using it with other front-end frameworks or even vanilla JavaScript.
+Technically, `bcx-aurelia-dnd` doesn't depend on Aurelia, it only uses `aurelia-event-aggregator` to provide better integration with Aurelia. There is nothing preventing you from using it with other front-end frameworks or even vanilla JavaScript. For example, we have an example with Vue 3 [Move box (Vue 3)](./examples/move-box-vue3).
 
 ## Alternative projects
 
